@@ -1,7 +1,7 @@
 # Smart contract security review reports performed by Christos Pap
 
 ## Solo Audits
-- [Yield - Variable Rate Lending & Borrowing](https://github.com/DecorativePineapple/audits/blob/main/audits/solo/Yield-VR-Solo-Security-Review.md)
+- [Yield - Variable Rate Lending & Borrowing](https://github.com/christos-eth/audits/blob/main/reports/solo/Yield-VR-Solo-Security-Review.md)
 
 
 ## Spearbit
