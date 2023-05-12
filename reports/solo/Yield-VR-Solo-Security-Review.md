@@ -87,14 +87,14 @@ Christos Pap is an independent security researcher who specializes in Ethereum s
 | [H-01] | Precision loss in the `VariableInterestRateOracle:get` function affects the interest rate of the `Yield Variable Rate` Protocol              | High        | Fixed        |
 | [H-02] | Inaccurate refund logic causes incorrect accounting in underlying Join contract | High        | Fixed        |
 | [M-01] | `Name`, `Symbol` and `Decimals` will have the default values in the `VyToken`| Medium        | Fixed |
-| [L-01] | If the spot oracle goes down, most of the `Yield Variable Rate Protocol`, including liquidations, can be frozen | Low           | Aknowledged        |
+| [L-01] | If the spot oracle goes down, most of the `Yield Variable Rate Protocol`, including liquidations, can be frozen | Low           | Acknowledged        |
 | [L-02] | Deviation from `EIP3156` standard may affect composability                  | Low           | - |
-| [L-03] | An attacker can force the `Redeemed` event to be emitted with the wrong `holder` argument   | Low | Aknowledged        |
-| [I-01] | No allowance front-running mitigation                                       | Informational | Aknowledged        |
-| [I-02] | `TransferHelper` library does not verify token code size before executing transfers                                                     | Informational | Aknowledged        |
-| [I-03] | Lack of input validation in function parameters                              | Informational | Aknowledged        |
+| [L-03] | An attacker can force the `Redeemed` event to be emitted with the wrong `holder` argument   | Low | Acknowledged        |
+| [I-01] | No allowance front-running mitigation                                       | Informational | Acknowledged        |
+| [I-02] | `TransferHelper` library does not verify token code size before executing transfers                                                     | Informational | Acknowledged        |
+| [I-03] | Lack of input validation in function parameters                              | Informational | Acknowledged        |
 | [I-04] | Typographical errors and missing data in comments & NatSpec docs            | Informational | Fixed        |
-| [I-05] | Function ordering does not follow the Solidity style guide                  | Informational | Aknowledged        |
+| [I-05] | Function ordering does not follow the Solidity style guide                  | Informational | Acknowledged        |
 
 
 ## High severity
@@ -197,7 +197,7 @@ Chainlink has taken oracles offline in extreme cases, such as during the UST col
 
 **Yield Team:** In extreme cases a proposal could be executed to change the `spotOracle`. Since it is a risk in an extreme case we would stick with the current mitigation methodology.
 
-**Christos Pap:** Aknowledged.
+**Christos Pap:** Acknowledged.
 
 ### [L-02]  Deviation from `EIP3156` standard may affect composability
 **Context:** [VYToken.sol#L248](https://github.com/yieldprotocol/vault-v2/blob/1d1602a06fda352f463b6f126c8a90e05e221541/src/variable/VYToken.sol#L248), [VYToken.sol#L181-L195](https://github.com/yieldprotocol/vault-v2/blob/1d1602a06fda352f463b6f126c8a90e05e221541/src/variable/VYToken.sol#L181-L195)
@@ -283,7 +283,7 @@ The same and worse effects can happen if one of the tokens is upgraded, which is
 
 With regards to all governance errors, we prefer to use a [robust governance review process](https://hackernoon.com/how-to-review-a-governance-action) as it offers a more comprehensive protection.
 
-**Christos Pap:** Aknowledged.
+**Christos Pap:** Acknowledged.
 
 ### [i-03] Lack of input validation in function parameters
 **Context:** [VRCauldron.sol#L114](https://github.com/yieldprotocol/vault-v2/blob/1d1602a06fda352f463b6f126c8a90e05e221541/src/variable/VRCauldron.sol#L114), [VRCauldron.sol#L149](https://github.com/yieldprotocol/vault-v2/blob/1d1602a06fda352f463b6f126c8a90e05e221541/src/variable/VRCauldron.sol#L149), [VYToken.sol#L66](https://github.com/yieldprotocol/vault-v2/blob/1d1602a06fda352f463b6f126c8a90e05e221541/src/variable/VYToken.sol#L66)
@@ -297,7 +297,7 @@ With regards to all governance errors, we prefer to use a [robust governance rev
 
 **Yield Team:** We rely on our mature governance process to prevent issues for the above.
 
-**Christos Pap:** Aknowledged.
+**Christos Pap:** Acknowledged.
 
 ### [i-04] Typographical errors and missing data in comments & NatSpec docs
 **Context:** [VRCauldron.sol#L110](https://github.com/yieldprotocol/vault-v2/blob/1d1602a06fda352f463b6f126c8a90e05e221541/src/variable/VRCauldron.sol#L110), [VRLadle.sol#L220](https://github.com/yieldprotocol/vault-v2/blob/1d1602a06fda352f463b6f126c8a90e05e221541/src/variable/VRLadle.sol#L220), [VRLadle.sol#L111](https://github.com/yieldprotocol/vault-v2/blob/1d1602a06fda352f463b6f126c8a90e05e221541/src/variable/VRLadle.sol#L111), [VariableInterestRateOracle.sol#L12](https://github.com/yieldprotocol/vault-v2/blob/1d1602a06fda352f463b6f126c8a90e05e221541/src/oracles/VariableInterestRateOracle.sol#L12), [VYToken.sol#L20](https://github.com/yieldprotocol/vault-v2/blob/1d1602a06fda352f463b6f126c8a90e05e221541/src/variable/VYToken.sol#L20), [VYToken.sol#L21](https://github.com/yieldprotocol/vault-v2/blob/1d1602a06fda352f463b6f126c8a90e05e221541/src/variable/VYToken.sol#L21), [VRLadle.sol#L366](https://github.com/yieldprotocol/vault-v2/blob/1d1602a06fda352f463b6f126c8a90e05e221541/src/variable/VRLadle.sol#L366)
@@ -326,7 +326,7 @@ With regards to all governance errors, we prefer to use a [robust governance rev
 
 **Yield Team:**  We are going to stick to our current style.
 
-**Christos Pap:** Aknowledged.
+**Christos Pap:** Acknowledged.
 
 ## Additional Notes
 - During the security review, it was discovered that some sections [of the code](https://github.com/yieldprotocol/vault-v2/blob/1d1602a06fda352f463b6f126c8a90e05e221541/src/variable/VRLadle.sol#L340) did not follow the Check Effects Interaction (CEI) pattern. These functions do not have the protection of the [`nonReentrant()` modifier](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/ab2604ac5b791adf3c5e2397e65128cb56954edd/contracts/security/ReentrancyGuard.sol#LL50C5-L50C28). If any [`ERC777`](https://eips.ethereum.org/EIPS/eip-777) tokens are supported, a re-entrancy (either a same-function or a cross-function) could be introduced.
