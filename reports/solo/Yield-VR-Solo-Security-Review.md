@@ -262,7 +262,7 @@ None of these contracts provide protection against the [`allowance front-running
 
 **Recommendation** To mitigate this issue, you could consider using the [`OpenZeppelin ERC20`](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/8d633cb7d169f2f8595b273660b00b69e845c2fe/contracts/token/ERC20/ERC20.sol#L38) implementation. This implementation includes the [increaseAllowance](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/8d633cb7d169f2f8595b273660b00b69e845c2fe/contracts/token/ERC20/ERC20.sol#L177) and [decreaseAllowance](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/8d633cb7d169f2f8595b273660b00b69e845c2fe/contracts/token/ERC20/ERC20.sol#L197) functions, which protect against the allowance front-running attack. Although an attacker may not have any incentive to perform this attack, adding these functions can be seen as an added layer of protection.
 
-**Yield Team:** We aknowledge this one and we prefer to not fix it.
+**Yield Team:** We acknowledge this one and we prefer to not fix it.
 
 ### [i-02] `TransferHelper` library does not verify token code size before executing transfers
 **Context:** [TransferHelper.sol](https://github.com/yieldprotocol/yield-utils-v2/blob/main/src/token/TransferHelper.sol)
