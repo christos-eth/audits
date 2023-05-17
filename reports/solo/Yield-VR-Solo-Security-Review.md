@@ -181,8 +181,6 @@ If we ran the following snippet we can see that the [`VYToken`](https://github.c
 
 ## Low severity
 ### [L-01]  If the spot oracle goes down, most of the `Yield Variable Rate Protocol`, including liquidations, can be frozen
-**Severity:** Low
-
 **Context:** [VRCauldron.sol#L139](https://github.com/yieldprotocol/vault-v2/blob/1d1602a06fda352f463b6f126c8a90e05e221541/src/variable/VRCauldron.sol#L139), [ChainlinkMultiOracle.sol#L16](https://github.com/yieldprotocol/vault-v2/blob/1d1602a06fda352f463b6f126c8a90e05e221541/src/oracles/chainlink/ChainlinkMultiOracle.sol#L16)
 
 **Description:** The  [`setSpotOracle`](https://github.com/yieldprotocol/vault-v2/blob/1d1602a06fda352f463b6f126c8a90e05e221541/src/variable/VRCauldron.sol#L139) function in the `VRCauldron` contract sets an instance of the  [`ChainlinkMultiOracle` contract](https://github.com/yieldprotocol/vault-v2/blob/1d1602a06fda352f463b6f126c8a90e05e221541/src/oracles/chainlink/ChainlinkMultiOracle.sol#L16) contract as the `IOracle`. However, the [`ChainlinkMultiOracle` contract](https://github.com/yieldprotocol/vault-v2/blob/1d1602a06fda352f463b6f126c8a90e05e221541/src/oracles/chainlink/ChainlinkMultiOracle.sol#L16) uses a single oracle to obtain the latest price feed.
@@ -239,7 +237,6 @@ Thanks for raising it, I'll revise the wording in 3156 instead of changing the c
 **Christos Pap:** Verified.
 
 ### [L-03] An attacker can force the Redeemed event to be emitted with the wrong holder argument
-
 **Context:** [VYToken.sol#L111](https://github.com/yieldprotocol/vault-v2/blob/1d1602a06fda352f463b6f126c8a90e05e221541/src/variable/VYToken.sol#L111),  [VYToken.sol#L143](https://github.com/yieldprotocol/vault-v2/blob/1d1602a06fda352f463b6f126c8a90e05e221541/src/variable/VYToken.sol#L143)
 
 **Description:** The custom [`_burn`](https://github.com/yieldprotocol/vault-v2/blob/1d1602a06fda352f463b6f126c8a90e05e221541/src/variable/VYToken.sol#L181) function allows a user to transfer `vyToken` to the contract to enable a `burn`, potentially saving the cost of `approve` or `permit`. This is achieved by using any tokens that are present in the `VyToken` contract.
