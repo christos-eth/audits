@@ -2,6 +2,7 @@
 
 ## Solo Audits
 - [Yield - Variable Rate Lending & Borrowing](https://github.com/christos-eth/audits/blob/main/reports/solo/Yield-VR-Solo-Security-Review.md)
+- Yield TokenUpgrade
 
 
 ## Spearbit
