@@ -3,8 +3,9 @@
 ## Solo Audits
 | Project                       | Client                                       | Date          | Report                                                                                                                                   |
 | ----------------------------- | -------------------------------------------- | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| Yield - Variable Rate Lending & Borrowing | [Yield Protocol](https://yieldprotocol.com/) | April 2023 | [GitHub](https://github.com/christos-eth/audits/blob/main/reports/solo/Yield-VR-Solo-Security-Review.md)
 | Yield - Token Upgrade contract            | [Yield Protocol](https://yieldprotocol.com/) | May 2023   | [GitHub](https://github.com/christos-eth/audits/blob/main/reports/solo/Yield-TokenUpgrade-security-review.md)
+| Yield - Variable Rate Lending & Borrowing | [Yield Protocol](https://yieldprotocol.com/) | April 2023 | [GitHub](https://github.com/christos-eth/audits/blob/main/reports/solo/Yield-VR-Solo-Security-Review.md)
+
 
 
 ## Audits with Spearbit
