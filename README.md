@@ -12,7 +12,10 @@
 - Paladin
 - [Cron Finance](https://github.com/spearbit/portfolio/blob/master/pdfs/CronFinance-Spearbit-Security-Review.pdf)	
 - Waterfall
-- Nouns DAO		
+- Nouns DAO
+
+## Audits with Cantina
+- [Parcel](https://cantina.xyz/portfolio/cantina_parcel_feb2023.pdf)
 
 ## About Christos
 Christos Pap is an independent security researcher who specializes in Ethereum smart contract security. He currently works as a Junior Security Researcher at Spearbit and is an alumnus of the yAcademy fellowship program. Additionally, he is undergraduate student of Electrical and Computer Engineering and he has extensive experience in offensive security, having worked as a Penetration Tester and holding the OSCP certification. You can connect with him on Twitter at [@christos_eth](https://twitter.com/christos_eth).
