@@ -288,7 +288,7 @@ With regards to all governance errors, we prefer to use a [robust governance rev
 **Description:** Some functions of the Variable Rate Yield project lack threshold checks, which could lead to unexpected behaviour in certain situations. 
 
 **Recommended Mitigation Steps:** To address these issues, it is recommended to apply the following mitigations:
-- In the [`setDebtLimits`](https://github.com/yieldprotocol/vault-v2/blob/1d1602a06fda352f463b6f126c8a90e05e221541/src/variable/VRCauldron.sol#L114) you could add a require statement that `min > max` or `min >= max`.
+- In the [`setDebtLimits`](https://github.com/yieldprotocol/vault-v2/blob/1d1602a06fda352f463b6f126c8a90e05e221541/src/variable/VRCauldron.sol#L114) you could add a require statement that `min < max` or `min <= max`.
 - In the [`setSpotOracle`](https://github.com/yieldprotocol/vault-v2/blob/1d1602a06fda352f463b6f126c8a90e05e221541/src/variable/VRCauldron.sol#L149) function could add a require statement that `ratio <= 1000000`.
 - In the [`setFlashFeeFactor`](https://github.com/yieldprotocol/vault-v2/blob/1d1602a06fda352f463b6f126c8a90e05e221541/src/variable/VYToken.sol#L66) function a threshold could be added as an upper bound for the `fee` value.
 
