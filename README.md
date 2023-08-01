@@ -12,7 +12,7 @@
 - Paladin
 - [Cron Finance](https://github.com/spearbit/portfolio/blob/master/pdfs/CronFinance-Spearbit-Security-Review.pdf)	
 - Waterfall
-- Nouns DAO
+- [Nouns DAO](https://github.com/spearbit/portfolio/blob/master/pdfs/Nouns-Spearbit-Security-Review.pdf)
 
 ## Audits with Cantina
 - [Parcel](https://cantina.xyz/portfolio/cantina_parcel_feb2023.pdf)
